@@ -1,12 +1,18 @@
 import logging
+<<<<<<< HEAD
 import sys
 from pathlib import Path
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 from dotenv import load_dotenv
 
 load_dotenv()
 
+<<<<<<< HEAD
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 from app.agent.curator_agent import CuratorAgent
 from app.profiles.user_profile import USER_PROFILE
 from app.database.repository import Repository

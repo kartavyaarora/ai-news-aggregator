@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 from typing import List
 from openai import OpenAI
@@ -5,6 +6,11 @@ from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 
 load_dotenv()
+=======
+from typing import List
+from pydantic import BaseModel, Field
+from .base import BaseAgent
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 
 
 class RankedArticle(BaseModel):
@@ -39,10 +45,16 @@ Scoring Guidelines:
 Rank articles from most relevant (rank 1) to least relevant. Ensure each article has a unique rank."""
 
 
+<<<<<<< HEAD
 class CuratorAgent:
     def __init__(self, user_profile: dict):
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self.model = "gpt-4.1"
+=======
+class CuratorAgent(BaseAgent):
+    def __init__(self, user_profile: dict):
+        super().__init__("gpt-4.1")
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
         self.user_profile = user_profile
         self.system_prompt = self._build_system_prompt()
 

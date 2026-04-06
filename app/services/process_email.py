@@ -11,8 +11,13 @@ from app.services.email import send_email, digest_to_html
 
 logging.basicConfig(
     level=logging.INFO,
+<<<<<<< HEAD
     format='%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
+=======
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 )
 logger = logging.getLogger(__name__)
 
@@ -21,6 +26,7 @@ def generate_email_digest(hours: int = 24, top_n: int = 10) -> EmailDigestRespon
     curator = CuratorAgent(USER_PROFILE)
     email_agent = EmailAgent(USER_PROFILE)
     repo = Repository()
+<<<<<<< HEAD
     
     digests = repo.get_recent_digests(hours=hours)
     total = len(digests)
@@ -38,6 +44,24 @@ def generate_email_digest(hours: int = 24, top_n: int = 10) -> EmailDigestRespon
     
     logger.info(f"Generating email digest with top {top_n} articles")
     
+=======
+
+    digests = repo.get_recent_digests(hours=hours)
+    total = len(digests)
+
+    if total == 0:
+        raise ValueError("No digests available")
+
+    logger.info(f"Ranking {total} digests for email generation")
+    ranked_articles = curator.rank_digests(digests)
+
+    if not ranked_articles:
+        logger.error("Failed to rank digests")
+        raise ValueError("Failed to rank articles")
+
+    logger.info(f"Generating email digest with top {top_n} articles")
+
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
     article_details = [
         RankedArticleDetail(
             digest_id=a.digest_id,
@@ -47,6 +71,7 @@ def generate_email_digest(hours: int = 24, top_n: int = 10) -> EmailDigestRespon
             title=next((d["title"] for d in digests if d["id"] == a.digest_id), ""),
             summary=next((d["summary"] for d in digests if d["id"] == a.digest_id), ""),
             url=next((d["url"] for d in digests if d["id"] == a.digest_id), ""),
+<<<<<<< HEAD
             article_type=next((d["article_type"] for d in digests if d["id"] == a.digest_id), "")
         )
         for a in ranked_articles
@@ -63,14 +88,48 @@ def generate_email_digest(hours: int = 24, top_n: int = 10) -> EmailDigestRespon
     logger.info(email_digest.introduction.greeting)
     logger.info(f"\n{email_digest.introduction.introduction}")
     
+=======
+            article_type=next(
+                (d["article_type"] for d in digests if d["id"] == a.digest_id), ""
+            ),
+        )
+        for a in ranked_articles
+    ]
+
+    email_digest = email_agent.create_email_digest_response(
+        ranked_articles=article_details, total_ranked=len(ranked_articles), limit=top_n
+    )
+
+    logger.info("Email digest generated successfully")
+    logger.info("\n=== Email Introduction ===")
+    logger.info(email_digest.introduction.greeting)
+    logger.info(f"\n{email_digest.introduction.introduction}")
+
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
     return email_digest
 
 
 def send_digest_email(hours: int = 24, top_n: int = 10) -> dict:
+<<<<<<< HEAD
+=======
+    repo = Repository()
+    digests = repo.get_recent_digests(hours=hours)
+
+    if len(digests) == 0:
+        logger.info("No new digests to send. Nothing to send.")
+        return {
+            "success": True,
+            "skipped": True,
+            "message": "No new digests available",
+            "articles_count": 0,
+        }
+
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
     try:
         result = generate_email_digest(hours=hours, top_n=top_n)
         markdown_content = result.to_markdown()
         html_content = digest_to_html(result)
+<<<<<<< HEAD
         
         subject = f"Daily AI News Digest - {result.introduction.greeting.split('for ')[-1] if 'for ' in result.introduction.greeting else 'Today'}"
         
@@ -92,6 +151,26 @@ def send_digest_email(hours: int = 24, top_n: int = 10) -> dict:
             "success": False,
             "error": str(e)
         }
+=======
+
+        subject = f"Daily AI News Digest - {result.introduction.greeting.split('for ')[-1] if 'for ' in result.introduction.greeting else 'Today'}"
+
+        send_email(subject=subject, body_text=markdown_content, body_html=html_content)
+
+        digest_ids = [article.digest_id for article in result.articles]
+        marked_count = repo.mark_digests_as_sent(digest_ids)
+
+        logger.info(f"Email sent successfully! Marked {marked_count} digests as sent.")
+        return {
+            "success": True,
+            "subject": subject,
+            "articles_count": len(result.articles),
+            "marked_as_sent": marked_count,
+        }
+    except ValueError as e:
+        logger.error(f"Error sending email: {e}")
+        return {"success": False, "error": str(e)}
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 
 
 if __name__ == "__main__":
@@ -102,4 +181,7 @@ if __name__ == "__main__":
         print(f"Articles: {result['articles_count']}")
     else:
         print(f"Error: {result['error']}")
+<<<<<<< HEAD
 
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
