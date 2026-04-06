@@ -11,6 +11,7 @@ resolution-markers = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "accelerate"
 version = "1.11.0"
 source = { registry = "https://pypi.org/simple" }
@@ -29,15 +30,23 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "ai-news-aggregator"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+<<<<<<< HEAD
     { name = "beautifulsoup4" },
     { name = "docling" },
     { name = "feedparser" },
     { name = "markdown" },
     { name = "markdownify" },
+=======
+    { name = "feedparser" },
+    { name = "html-to-markdown" },
+    { name = "markdown" },
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
     { name = "openai" },
     { name = "psycopg2-binary" },
     { name = "pydantic" },
@@ -54,11 +63,17 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+<<<<<<< HEAD
     { name = "beautifulsoup4", specifier = ">=4.14.2" },
     { name = "docling", specifier = ">=2.61.2" },
     { name = "feedparser", specifier = ">=6.0.12" },
     { name = "markdown", specifier = ">=3.7.0" },
     { name = "markdownify", specifier = ">=0.11.6" },
+=======
+    { name = "feedparser", specifier = ">=6.0.12" },
+    { name = "html-to-markdown", specifier = ">=2.7.1" },
+    { name = "markdown", specifier = ">=3.7.0" },
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
     { name = "openai", specifier = ">=2.7.2" },
     { name = "psycopg2-binary", specifier = ">=2.9.11" },
     { name = "pydantic", specifier = ">=2.0.0" },
@@ -81,12 +96,15 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "antlr4-python3-runtime"
 version = "4.9.3"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/3e/38/7859ff46355f76f8d19459005ca000b6e7012f2f1ca597746cbcd1fbfe5e/antlr4-python3-runtime-4.9.3.tar.gz", hash = "sha256:f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b", size = 117034, upload-time = "2021-11-06T17:52:23.524Z" }
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "anyio"
 version = "4.11.0"
 source = { registry = "https://pypi.org/simple" }
@@ -119,6 +137,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "attrs"
 version = "25.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -141,6 +160,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "certifi"
 version = "2025.11.12"
 source = { registry = "https://pypi.org/simple" }
@@ -264,6 +285,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "click"
 version = "8.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -276,6 +298,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -285,6 +309,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "colorlog"
 version = "6.10.1"
 source = { registry = "https://pypi.org/simple" }
@@ -297,6 +322,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "comm"
 version = "0.2.3"
 source = { registry = "https://pypi.org/simple" }
@@ -345,6 +372,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "dill"
 version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -354,6 +382,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "distro"
 version = "1.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -363,6 +393,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "docling"
 version = "2.61.2"
 source = { registry = "https://pypi.org/simple" }
@@ -521,6 +552,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "executing"
 version = "2.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -530,6 +563,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "faker"
 version = "38.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -542,6 +576,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "feedparser"
 version = "6.0.12"
 source = { registry = "https://pypi.org/simple" }
@@ -554,6 +590,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "filelock"
 version = "3.20.0"
 source = { registry = "https://pypi.org/simple" }
@@ -581,6 +618,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "greenlet"
 version = "3.2.4"
 source = { registry = "https://pypi.org/simple" }
@@ -629,6 +668,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "hf-xet"
 version = "1.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -655,6 +695,16 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/0b/dd/7ac658d54b9fb7999a0ccb07ad863b413cbaf5cf172f48ebcd9497ec7263/hf_xet-1.2.0-cp37-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:4c1428c9ae73ec0939410ec73023c4f842927f39db09b063b9482dac5a3bb737", size = 3413812, upload-time = "2025-10-24T19:04:24.585Z" },
     { url = "https://files.pythonhosted.org/packages/92/68/89ac4e5b12a9ff6286a12174c8538a5930e2ed662091dd2572bbe0a18c8a/hf_xet-1.2.0-cp37-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:a55558084c16b09b5ed32ab9ed38421e2d87cf3f1f89815764d1177081b99865", size = 3508920, upload-time = "2025-10-24T19:04:26.927Z" },
     { url = "https://files.pythonhosted.org/packages/cb/44/870d44b30e1dcfb6a65932e3e1506c103a8a5aea9103c337e7a53180322c/hf_xet-1.2.0-cp37-abi3-win_amd64.whl", hash = "sha256:e6584a52253f72c9f52f9e549d5895ca7a471608495c4ecaa6cc73dba2b24d69", size = 2905735, upload-time = "2025-10-24T19:04:35.928Z" },
+=======
+name = "html-to-markdown"
+version = "2.7.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c9/95/8f5558c923235a17b801ef30517f9cf94a45ddf6a085423a6a4895533504/html_to_markdown-2.7.1.tar.gz", hash = "sha256:fbc33d85861790d0177f8e1b4d559a888cca6a1c0e501960848d2b840af7c09f", size = 1579065, upload-time = "2025-11-12T12:28:16.318Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/19/83/dbc32aa55a17949eb7169bb88a44c1460baae474efec03d888cb05f3b765/html_to_markdown-2.7.1-cp310-abi3-macosx_11_0_arm64.whl", hash = "sha256:ef87ebfa92dfcb1d13571bd29f02784f7e1472dba8c8cb65e72e465a62f9e3d4", size = 3746094, upload-time = "2025-11-12T12:28:11.563Z" },
+    { url = "https://files.pythonhosted.org/packages/89/8e/e979137fc883076d0f48150dcbc53b04953ffc2cc8b43a194b64740295e6/html_to_markdown-2.7.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:0be094961336b420a16ea8dd1955958e4472b761a8b1b9a890011115ebfb4870", size = 4171967, upload-time = "2025-11-12T12:28:13.49Z" },
+    { url = "https://files.pythonhosted.org/packages/5a/98/0dbf43a7d561babe9ed4735ba33f8a13154b558bbb8e03dac0339b59ce76/html_to_markdown-2.7.1-cp310-abi3-win_amd64.whl", hash = "sha256:092edd1279657918dd313bcf8328c0aadb0c6833ab9de5e62cee5ca22a0ab862", size = 4091298, upload-time = "2025-11-12T12:28:14.868Z" },
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 ]
 
 [[package]]
@@ -686,6 +736,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "huggingface-hub"
 version = "0.36.0"
 source = { registry = "https://pypi.org/simple" }
@@ -705,6 +756,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "idna"
 version = "3.11"
 source = { registry = "https://pypi.org/simple" }
@@ -714,6 +767,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "imageio"
 version = "2.37.2"
 source = { registry = "https://pypi.org/simple" }
@@ -727,6 +781,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "ipykernel"
 version = "7.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -796,6 +852,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "jinja2"
 version = "3.1.6"
 source = { registry = "https://pypi.org/simple" }
@@ -808,6 +865,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "jiter"
 version = "0.12.0"
 source = { registry = "https://pypi.org/simple" }
@@ -876,6 +935,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "jsonlines"
 version = "4.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -924,6 +984,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "jupyter-client"
 version = "8.6.3"
 source = { registry = "https://pypi.org/simple" }
@@ -953,6 +1015,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "latex2mathml"
 version = "3.78.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1054,6 +1117,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "markdown"
 version = "3.10"
 source = { registry = "https://pypi.org/simple" }
@@ -1063,6 +1128,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "markdown-it-py"
 version = "4.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1160,6 +1226,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "matplotlib-inline"
 version = "0.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1172,6 +1240,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "mdurl"
 version = "0.1.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1226,6 +1295,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "nest-asyncio"
 version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1235,6 +1306,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "networkx"
 version = "3.5"
 source = { registry = "https://pypi.org/simple" }
@@ -1494,6 +1566,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "openai"
 version = "2.7.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1513,6 +1587,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "opencv-python"
 version = "4.11.0.86"
 source = { registry = "https://pypi.org/simple" }
@@ -1559,6 +1634,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "packaging"
 version = "25.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1568,6 +1645,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pandas"
 version = "2.3.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1615,6 +1693,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "parso"
 version = "0.8.5"
 source = { registry = "https://pypi.org/simple" }
@@ -1636,6 +1716,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pillow"
 version = "11.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1702,6 +1783,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "platformdirs"
 version = "4.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1711,6 +1794,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pluggy"
 version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1733,6 +1817,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "prompt-toolkit"
 version = "3.0.52"
 source = { registry = "https://pypi.org/simple" }
@@ -1830,6 +1916,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pyclipper"
 version = "1.3.0.post6"
 source = { registry = "https://pypi.org/simple" }
@@ -1850,6 +1937,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "pycparser"
 version = "2.23"
 source = { registry = "https://pypi.org/simple" }
@@ -1945,6 +2034,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pydantic-settings"
 version = "2.12.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1959,6 +2049,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "pygments"
 version = "2.19.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1968,6 +2060,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pylatexenc"
 version = "2.10"
 source = { registry = "https://pypi.org/simple" }
@@ -2120,6 +2213,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "python-dateutil"
 version = "2.9.0.post0"
 source = { registry = "https://pypi.org/simple" }
@@ -2132,6 +2227,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "python-docx"
 version = "1.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2145,6 +2241,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "python-dotenv"
 version = "1.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -2154,6 +2252,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "python-pptx"
 version = "1.0.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2240,6 +2339,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "pyzmq"
 version = "27.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2283,6 +2384,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "rapidocr"
 version = "3.4.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2396,6 +2498,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "requests"
 version = "2.32.5"
 source = { registry = "https://pypi.org/simple" }
@@ -2411,6 +2515,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "rich"
 version = "14.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2661,12 +2766,15 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "sgmllib3k"
 version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/9e/bd/3704a8c3e0942d711c1299ebf7b9091930adae6675d7c8f476a7ce48653c/sgmllib3k-1.0.0.tar.gz", hash = "sha256:7868fb1c8bfa764c1ac563d3cf369c381d1325d36124933a726f29fcdaa812e9", size = 5750, upload-time = "2010-08-24T14:33:52.445Z" }
 
 [[package]]
+<<<<<<< HEAD
 name = "shapely"
 version = "2.1.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2727,6 +2835,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "six"
 version = "1.17.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2745,6 +2855,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "soupsieve"
 version = "2.8"
 source = { registry = "https://pypi.org/simple" }
@@ -2754,6 +2865,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "sqlalchemy"
 version = "2.0.44"
 source = { registry = "https://pypi.org/simple" }
@@ -2797,6 +2910,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "sympy"
 version = "1.14.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2939,6 +3053,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "tornado"
 version = "6.5.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2979,6 +3095,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "transformers"
 version = "4.57.1"
 source = { registry = "https://pypi.org/simple" }
@@ -3126,6 +3243,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "typing-extensions"
 version = "4.15.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3147,6 +3266,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "tzdata"
 version = "2025.2"
 source = { registry = "https://pypi.org/simple" }
@@ -3156,6 +3276,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "urllib3"
 version = "2.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3174,6 +3296,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "xlsxwriter"
 version = "3.2.9"
 source = { registry = "https://pypi.org/simple" }
@@ -3183,6 +3306,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 name = "youtube-transcript-api"
 version = "1.2.3"
 source = { registry = "https://pypi.org/simple" }

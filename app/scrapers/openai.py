@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from datetime import datetime, timedelta, timezone
 from typing import List, Optional
 import feedparser
@@ -45,6 +46,23 @@ class OpenAIScraper:
                 ))
         
         return articles
+=======
+from typing import List
+from .base import BaseScraper, Article
+
+
+class OpenAIArticle(Article):
+    pass
+
+
+class OpenAIScraper(BaseScraper):
+    @property
+    def rss_urls(self) -> List[str]:
+        return ["https://openai.com/news/rss.xml"]
+
+    def get_articles(self, hours: int = 24) -> List[OpenAIArticle]:
+        return [OpenAIArticle(**article.model_dump()) for article in super().get_articles(hours)]
+>>>>>>> ef3887c9d3ca5c255048389b17a5d655c67d7f8a
 
   
 if __name__ == "__main__":
